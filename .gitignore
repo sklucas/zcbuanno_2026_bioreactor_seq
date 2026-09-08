@@ -39,5 +39,10 @@ vignettes/*.pdf
 .Renviron
 
 # Project specific
-# raw_data/
-# resources/
+*.zip
+*.tar.gz
+*.fastq
+*.fastq.gz
+*.fq
+*.fasta
+results/
