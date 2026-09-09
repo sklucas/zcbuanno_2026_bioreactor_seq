@@ -16,7 +16,7 @@ assembly internally.
 From this directory:
 
 ```bash
-mkdir -p logs
+mkdir -p slurm/logs
 sbatch run_nextflow.sbatch
 ```
 
@@ -29,7 +29,7 @@ squeue --me
 sacct --name=nfcore_mag_head --starttime=today
 ```
 
-Head-process logs are written to `logs/nextflow_head_<jobid>.out` and
-`logs/nextflow_head_<jobid>.err`.
+Head-process logs are written to `slurm/logs/nextflow_head_<jobid>.out` and
+`slurm/logs/nextflow_head_<jobid>.err`.
 
 
