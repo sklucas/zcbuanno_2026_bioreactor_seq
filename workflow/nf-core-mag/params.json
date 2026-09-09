@@ -1,6 +1,6 @@
 {
-  "input": "../data/raw/AUG2026/mgx/AUG2026_mgx.csv",
-  "outdir": "../results/mag",
+  "input": "../../data/raw/AUG2026/mgx/AUG2026_mgx.csv",
+  "outdir": "../../results/mag",
   "email": "sklucas@syr.edu",
   "reads_minlength": 50,
   "host_genome": "GRCh38",
