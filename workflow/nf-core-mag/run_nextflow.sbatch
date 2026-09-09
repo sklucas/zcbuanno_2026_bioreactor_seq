@@ -3,6 +3,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=4G
 #SBATCH --time=7-00:00:00
+#SBATCH --partition=normal
 #SBATCH --output=slurm/logs/nextflow_head_%j.out
 #SBATCH --error=slurm/logs/nextflow_head_%j.err
 #SBATCH --mail-type=ALL
