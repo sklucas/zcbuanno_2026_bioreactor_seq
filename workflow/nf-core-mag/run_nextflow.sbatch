@@ -23,6 +23,6 @@ export NXF_OPTS='-Xms1g -Xmx4g'
 nextflow run nf-core/mag \
   -r 5.5.0 \
   -profile singularity \
-  -c slurm/nextflow.config \
+  -c nextflow.config \
   -params-file params.json \
   -resume
