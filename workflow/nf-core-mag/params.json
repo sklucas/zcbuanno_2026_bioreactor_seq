@@ -13,6 +13,5 @@
   "busco_clean": true,
   "refine_bins_dastool": true,
   "refine_bins_dastool_savecontig2bin": true,
-  "postbinning_input": "refined_bins_only",
-  "generate_bigmag_file": true
+  "postbinning_input": "refined_bins_only"
 }
