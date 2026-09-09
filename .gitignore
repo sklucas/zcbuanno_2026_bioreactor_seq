@@ -46,3 +46,11 @@ vignettes/*.pdf
 *.fq
 *.fasta
 results/
+
+# Nextflow / nf-core
+work/
+.nextflow/
+.nextflow.log*
+*.sif
+singularity_cache/
+workflow/nf-core-mag/slurm/logs/
