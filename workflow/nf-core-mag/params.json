@@ -8,7 +8,6 @@
   "metaeuk_mmseqs_db": "UniRef50",
   "run_virus_identification": true,
   "genomad_db": "/home/sklucas/databases/genomad_db",
-  "run_checkm": true,
   "run_checkm2": true,
   "busco_clean": true,
   "refine_bins_dastool": true,
