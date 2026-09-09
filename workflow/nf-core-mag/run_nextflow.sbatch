@@ -9,9 +9,6 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=sklucas@syr.edu
 
-set -euo pipefail
-cd "$(dirname "${BASH_SOURCE[0]}")/.."
-
 # Load singularity
 module load singularity
 
@@ -20,6 +17,7 @@ source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate nf
 
 export NXF_OPTS='-Xms1g -Xmx4g'
+export NXF_HOME="${SLURM_SUBMIT_DIR}/.nextflow_${SLURM_JOB_ID}"
 
 nextflow run nf-core/mag \
   -r 5.5.0 \
