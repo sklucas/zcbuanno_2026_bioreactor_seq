@@ -1,0 +1,16 @@
+{
+  "input": "../../data/raw/AUG2026/mgx/AUG2026_mgx.csv",
+  "outdir": "../../results/mag",
+  "email": "sklucas@syr.edu",
+  "reads_minlength": 50,
+  "host_genome": "GRCh38",
+  "gtdb_db": "/home/sklucas/databases/gtdb/gtdbtk_r232_data.tar.gz",
+  "metaeuk_mmseqs_db": "UniRef50",
+  "run_virus_identification": true,
+  "genomad_db": "/home/sklucas/databases/genomad_db",
+  "run_checkm2": true,
+  "busco_clean": true,
+  "refine_bins_dastool": true,
+  "refine_bins_dastool_savecontig2bin": true,
+  "postbinning_input": "refined_bins_only"
+}

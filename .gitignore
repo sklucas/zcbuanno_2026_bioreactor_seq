@@ -42,5 +42,19 @@ vignettes/*.pdf
 .DS_Store
 
 # Project specific
-results/wf_16s/
-# resources/
+*.zip
+*.tar.gz
+*.fastq
+*.fastq.gz
+*.fq
+*.fasta
+results/
+
+# Nextflow / nf-core
+work/
+.nextflow/
+.nextflow.log*
+*.sif
+singularity_cache/
+workflow/nf-core-mag/slurm/logs/
+resources/
