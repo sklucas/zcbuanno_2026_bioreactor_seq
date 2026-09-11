@@ -1,0 +1,37 @@
+---
+title: "16S analysis"
+author: "Sarah Lucas"
+format: html
+editor: visual
+---
+
+Load packages
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+data_dir <- "/Users/sklucas/projects/zcbuanno_2026_bioreactor_seq/results/wf_16s"
+tsv_files <- list.files(data_dir, "*_taxonomy-detailed.tsv$", 
+                        recursive=TRUE,
+                        full.names = TRUE)
+tsv_files
+
+```
+
+```{r}
+data <- tsv_files %>%
+  set_names() %>%
+  map_dfr(read_tsv, .id = "source") %>%
+  select(source, everything()) %>%
+  mutate(source = gsub("/Users/sklucas/projects/zcbuanno_2026_bioreactor_seq/results/wf_16s/", "", source)) %>%
+  mutate(source = gsub("_taxonomy-detailed.tsv", "", source)) %>%
+  separate(source, sep = "/", into = "source", extra = "drop")
+```
+
+```{r}
+data %>%
+  ggplot(aes(x = source, y = abundance, fill = genus)) +
+  geom_col(position = "stack")
+```
