@@ -38,6 +38,9 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
+# Mac specific
+.DS_Store
+
 # Project specific
-# raw_data/
+results/wf_16s/
 # resources/
